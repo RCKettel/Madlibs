@@ -1,6 +1,9 @@
 #Labeling this as input list one b/c I want to try to create
 #the option of choosing btwn two stories and input lists.
 
+from ast import Break
+
+
 def Bicycles():
 
     name = input(["Enter your name and press enter,:"])
@@ -68,17 +71,16 @@ def News_Story():
 
     print(story_2)
 
-#Using another input var and an if statement to see if I can make an option to
-#choose between the two Madlibs functions.
+#using a where loop to allow the user to choose between the two functions.
 
-## The function ignored the choice to run Bicyles; need to figure out why.
-input(["Type 'Bicycles' or 'News Story' and press enter"])
-
-if 'Bicycles':
-    Bicycles()
-if 'News Story':
-    News_Story()
-else:
-    print("Please choose one of the two options and place it in single quotes.")
-
+#while True:
+    A= Bicycles
+    B = News_Story
+    Choose_your_Madlib = input(["Choose "+A+")'Bicycles' or " +B+ " )'News Story' [A/B]"])
+#    if Choose_your_Madlib == 'A':
+#        Bicycles
+#    elif Choose_your_Madlib == 'B':
+#        News_Story
+#    elif Choose_your_Madlib != 'A' and Choose_your_Madlib != 'B':
+#        print("Please choose A or B and press enter/return.")
 
