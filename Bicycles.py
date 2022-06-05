@@ -4,6 +4,7 @@
 
 from ast import Break
 from ctypes.wintypes import CHAR, INT
+from turtle import goto
 
 
 def Bicycles():
@@ -24,12 +25,13 @@ def Bicycles():
     color = input(["Enter any color, and press enter: "])
 
 #Story one, possibly to be used in multi-choice code
-    story = (+name+ ",most doctors agree that bicycle " +verb_1+ " is a/an " +adj_1+
-    " form of exercise." +verb_2+ " a bicycle helps you develop your " +body_part+
-    "muscles as well as " +adverb+ " increase the rate of a " +body_part_2+
-    " beat.  More " +noun+ " around the world " +verb_3+ " bicycles than drive "
-    +animal+ ".  No matter what kind of " +noun_2+ " you " +verb_4+
-    ", always be sure to wear a(n) " +adj_2+ "helmet.  Make sure to have "
-    +color+ " reflectors too!")
+    story = f"{name} ,most doctors agree that bicycle {verb_1} is a/n {adj_1}\
+     form of exercise.  {verb_2} a bicycle helps you develop your {body_part}\
+    muscles as well as {adverb} increasing the rate of your {body_part_2}\
+     beat.  More {noun}  around the world {verb_3} ride bicycles than ride\
+    {animal}.  No matter what kind of  {noun_2} you {verb_4},\
+    always be sure to wear a/n {adj_2} helmet.  Make sure to have\
+    {color} safety reflectors too!"
 
     print(story)
+
